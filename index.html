@@ -7,92 +7,87 @@
   <style>
     body { font-family: sans-serif; margin: 0; padding: 0; }
     header { padding: 2rem; text-align: center; font-size: 2rem; }
-    section { padding: 1.5rem; max-width: 700px; margin: auto; }
+    section { padding: 1.5rem; max-width: 800px; margin: auto; }
+    section h2 { text-align: left; }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 1rem 0;
+      background: linear-gradient(to right, #4f6fa8, #2e4a77);
+      border-bottom: 1px solid #ddd;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    nav a:hover { color: #d0e1ff; }
   </style>
 </head>
 <body>
-  <header>My Personal Website</header>
-  <section id="about">
+  <header>Biruk Tesfaye Teklewold</header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#projects">Projects</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home">
+    <h2>Welcome</h2>
+    <p>Welcome to my personal website. Here you can learn more about my background, experience, and professional achievements.</p>
+
     <h2>About Me</h2>
-    <p>Write about yourself here.</p>
+    <p>I am a civil and computer science professional with over two decades of experience in highway engineering, construction management, and building projects. My work spans detailed road design, site supervision, project coordination, and the management of complex residential, commercial, and public infrastructure developments.</p>
+    <p>I have led teams, prepared technical documents, overseen major design and construction workflows, and delivered projects ranging from multi-storey buildings to large-scale road networks across Ethiopia. My education includes a B.Sc. in Civil Engineering and another B.Sc. in Computer Science from Addis Ababa University, complemented by certifications in asphalt works, CAD software, and project management tools.</p>
   </section>
+
   <section id="projects">
     <h2>Projects</h2>
-
-    <div class="project">
-      <p><a href="#">Project link</a></p>
+    <div>
       <h3>Mixed Use Building B+G+13</h3>
-      <p>Managed construction of a 1200 m² mixed‑use building with shops and apartments. Responsibilities included planning, supervision, scheduling, workforce management, and coordination.</p>
+      <p>Supervised the construction of a 1200 m² mixed-use building with both residential and commercial spaces. Responsibilities included planning, supervision, scheduling, and ensuring quality compliance with safety standards.</p>
     </div>
-
-    <div class="project">
-      <p><a href="#">Project link</a></p>
+    <div>
       <h3>MARS Mixed Use Building Project</h3>
-      <p>Oversaw major works on a B+G+13 building of 1500 m² for apartment use, including supervision, design review, and progress coordination.</p>
+      <p>Oversaw design and execution of a B+G+13 apartment building of 1500 m², ensuring alignment with modern architectural standards and efficient workflow coordination among teams.</p>
     </div>
-
-    <div class="project">
-      <p><a href="#">Project link</a></p>
+    <div>
       <h3>Marcia Surgical Center</h3>
-      <p>Supervised G+5 building (600 m²) for medical use, preparing schedules, design checks, and construction oversight.</p>
-    </div>
-
-    <div class="project">
-      <p><a href="#">Project link</a></p>
-      <h3>Atat–Mazoria–Gunchre–Kose Road Project</h3>
-      <p>Led earthwork section of the road construction, including alignment checks, scheduling, and site supervision.</p>
-    </div>
-
-    <div class="project">
-      <p><a href="#">Project link</a></p>
-      <h3>Minaye Apartment Projects</h3>
-      <p>Managed multiple apartment projects (G+7+Terrace and B+G+10+Terrace), handling construction management and schedule preparation.</p>
-    </div>
-
-    <div class="project">
-      <p><a href="#">Project link</a></p>
-      <h3>Chida–Sodo Road Project</h3>
-      <p>Highway engineering on a 160 km gravel road through mountainous terrain; involved detailed design, alignment, and build supervision.</p>
-    </div>
-
-    <div class="project">
-      <p><a href="#">Project link</a></p>
-      <h3>Mojo–Awash Road Project</h3>
-      <p>Designed and supervised 87 km asphalt concrete road rehabilitation under heavy‑traffic, high‑temperature conditions.</p>
-    </div>
-
-    <div class="project">
-      <p><a href="#">Project link</a></p>
-      <h3>Addis–Ambo Road Project</h3>
-      <p>Worked on 112 km asphalt road involving alignment improvement, widening, and pavement reconstruction.</p>
-    </div>
-
-    <div class="project">
-      <p><a href="#">Project link</a></p>
-      <h3>Mekelle Town Asphalt Road Projects</h3>
-      <p>Supervised upgrading and construction of new asphalt roads across the city, including design review and field adjustments.</p>
-    </div>
-
-    <div class="project">
-      <p><a href="#">Project link</a></p>
-      <h3>Bahir Dar City Roads Project</h3>
-      <p>Supervised 30 km road upgrading to modern standards including pavement, drainage, and road furniture installation.</p>
+      <p>Directed construction of a 600 m² G+5 medical facility. Coordinated with architects, engineers, and contractors for design verification and project scheduling, ensuring timely delivery.</p>
     </div>
   </section>
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Add contact info or social links here.</p>
-  </section>
+
   <section id="testimonials">
     <h2>Testimonials</h2>
-    <blockquote>
-      <p>“Add a testimonial here from a colleague, client, or supervisor.”</p>
-      <cite>— Name, Role</cite>
-    </blockquote>
-    <blockquote>
-      <p>“Another testimonial placeholder waiting for your real words.”</p>
-      <cite>— Name, Role</cite>
-    </blockquote>
+    <p><strong>Testimonial 1:</strong> Biruk Tesfaye has consistently demonstrated professionalism, leadership, and technical competence throughout his work. His contributions in design and supervision have led to the successful completion of major projects.</p>
+    <p><a href="CamScanner 10-20-2025 12.22 (1).pdf" target="_blank">Download Testimonial File 1 (PDF)</a></p>
+
+    <p><strong>Testimonial 2:</strong> Biruk’s commitment to project excellence and his attention to detail make him a valued professional in civil engineering and construction management.</p>
+    <p><a href="CamScanner 10-20-2025 12.01.pdf" target="_blank">Download Testimonial File 2 (PDF)</a></p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>If you’d like to get in touch, please fill out the form below or email me directly at <a href="mailto:birtestek@gmail.com">birtestek@gmail.com</a>.</p>
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
   </section>
 </body>
 </html>
