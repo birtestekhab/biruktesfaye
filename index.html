@@ -1,40 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta name="description" content="Portfolio website of Biruk Tesfaye Teklewold, Civil Engineer/computer science. View projects and contact information.">
+  <meta name="description" content="Portfolio website of Biruk Tesfaye Teklewold, Civil Engineer. View projects and contact information.">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Biruk Tesfaye Teklewold</title>
   <style>
-    body { font-family: sans-serif; margin: 0; padding: 0; }
-    header { padding: 2rem; text-align: center; font-size: 2rem; }
-    section { padding: 1.5rem; max-width: 800px; margin: auto; }
-    section h2 { text-align: left; }
+    body { font-family: sans-serif; margin: 0; padding: 0; position: relative; }
+    header { padding: 2rem; text-align: center; font-size: 2rem; background-color: #2e4a77; color: white; }
+
+    /* Navigation Bar */
     nav {
       display: flex;
       justify-content: center;
-      gap: 1.5rem;
-      padding: 1rem 0;
+      align-items: center;
       background: linear-gradient(to right, #4f6fa8, #2e4a77);
-      border-bottom: 1px solid #ddd;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      padding: 1rem 0;
       position: sticky;
       top: 0;
       z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
     }
     nav a {
+      color: white;
       text-decoration: none;
-      color: #fff;
+      margin: 0 1rem;
       font-weight: bold;
       transition: color 0.3s ease;
     }
-    nav a:hover { color: #d0e1ff; }
+    nav a:hover {
+      color: #d0e1ff;
+    }
+
+    section { padding: 1.5rem; max-width: 800px; margin: auto; }
+    section h2 { text-align: left; }
+
+    /* Back to Top button styling */
+    #backToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #2e4a77;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      font-size: 20px;
+      cursor: pointer;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      display: none;
+      transition: background-color 0.3s ease;
+    }
+    #backToTop:hover { background-color: #4f6fa8; }
   </style>
 </head>
 <body>
-  <header>Biruk Tesfaye Teklewold</header>
+  <header>
+    <h1>Biruk Tesfaye Teklewold</h1>
+    <p>Engineer | Project Manager | Consultant</p>
+  </header>
+
   <nav>
     <a href="#home">Home</a>
+    <a href="#about">About</a>
     <a href="#projects">Projects</a>
     <a href="#testimonials">Testimonials</a>
     <a href="#contact">Contact</a>
@@ -43,25 +72,30 @@
   <section id="home">
     <h2>Welcome</h2>
     <p>Welcome to my personal website. Here you can learn more about my background, experience, and professional achievements.</p>
+  </section>
 
+  <section id="about">
     <h2>About Me</h2>
-    <p>I am a civil and computer science professional with over two decades of experience in highway engineering, construction management, and building projects. My work spans detailed road design, site supervision, project coordination, and the management of complex residential, commercial, and public infrastructure developments.</p>
-    <p>I have led teams, prepared technical documents, overseen major design and construction workflows, and delivered projects ranging from multi-storey buildings to large-scale road networks across Ethiopia. My education includes a B.Sc. in Civil Engineering and another B.Sc. in Computer Science from Addis Ababa University, complemented by certifications in asphalt works, CAD software, and project management tools.</p>
+    <p>I am <strong>Biruk Tesfaye Teklewold</strong>, a civil and computer science professional with extensive experience in infrastructure design, highway engineering, and project management. Over the past two decades, I have successfully planned, designed, and supervised numerous projects in Ethiopia, including road networks, multi-storey buildings, and medical and residential facilities.</p>
+    <p>My educational background includes a <strong>B.Sc. in Civil Engineering</strong> and a <strong>B.Sc. in Computer Science</strong> from Addis Ababa University. In addition, I have completed specialized training in asphalt works, CAD software, and spreadsheet management. I am a proud member of the <strong>Ethiopian Association of Civil Engineers (EACE)</strong>.</p>
+    <p>Throughout my career, I have held key roles such as Project Manager, Highway Engineer, and Design Consultant, working with leading firms including Gauff Ingeniure Consulting Engineers and Net Consult Plc. My core strengths include strategic project planning, technical leadership, interdisciplinary collaboration, and ensuring that every project I manage meets the highest standards of quality and efficiency.</p>
+    <p>Beyond engineering, my background in computer science enables me to integrate technology-driven approaches in design, documentation, and project supervision — ensuring smarter and more efficient construction management workflows.</p>
+    <p>My goal is to continue contributing to sustainable infrastructure development through innovation, teamwork, and professionalism.</p>
   </section>
 
   <section id="projects">
     <h2>Projects</h2>
     <div>
       <h3>Mixed Use Building B+G+13</h3>
-      <p>Supervised the construction of a 1200 m² mixed-use building with both residential and commercial spaces. Responsibilities included planning, supervision, scheduling, and ensuring quality compliance with safety standards.</p>
+      <p>Supervised construction of a 1200 m² mixed-use building with both residential and commercial spaces. Responsibilities included planning, supervision, scheduling, and ensuring quality compliance.</p>
     </div>
     <div>
       <h3>MARS Mixed Use Building Project</h3>
-      <p>Oversaw design and execution of a B+G+13 apartment building of 1500 m², ensuring alignment with modern architectural standards and efficient workflow coordination among teams.</p>
+      <p>Oversaw design and execution of a 1500 m² B+G+13 apartment building, ensuring modern architectural standards and efficient team coordination.</p>
     </div>
     <div>
       <h3>Marcia Surgical Center</h3>
-      <p>Directed construction of a 600 m² G+5 medical facility. Coordinated with architects, engineers, and contractors for design verification and project scheduling, ensuring timely delivery.</p>
+      <p>Directed construction of a 600 m² G+5 medical facility, coordinating with architects, engineers, and contractors for design verification and scheduling.</p>
     </div>
   </section>
 
@@ -69,14 +103,13 @@
     <h2>Testimonials</h2>
     <p><strong>Testimonial 1:</strong> Biruk Tesfaye has consistently demonstrated professionalism, leadership, and technical competence throughout his work. His contributions in design and supervision have led to the successful completion of major projects.</p>
     <p><a href="CamScanner 10-20-2025 12.22 (1).pdf" target="_blank">Download Testimonial File 1 (PDF)</a></p>
-
     <p><strong>Testimonial 2:</strong> Biruk’s commitment to project excellence and his attention to detail make him a valued professional in civil engineering and construction management.</p>
     <p><a href="CamScanner 10-20-2025 12.01.pdf" target="_blank">Download Testimonial File 2 (PDF)</a></p>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>If you’d like to get in touch, please fill out the form below or email me directly at <a href="mailto:birtestek@gmail.com">birtestek@gmail.com</a>.</p>
+    <p>If you’d like to get in touch, please email me directly at <a href="mailto:birtestek@gmail.com">birtestek@gmail.com</a> or use the contact form below.</p>
     <form action="#" method="post">
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" placeholder="Your name" required>
@@ -90,5 +123,7 @@
       <button type="submit">Send Message</button>
     </form>
   </section>
-</body>
-</html>
+
+  <button id="backToTop" title="Back to top">↑</button>
+
+  <script>
